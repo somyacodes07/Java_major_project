@@ -46,13 +46,13 @@ A wholesale distributor receives bulk product orders from retailers. The system 
 
 ```mermaid
 graph TD
-    UI[Swing GUI Layer: LoginFrame & MainDashboardFrame]
-    UI --> Service[OrderService & Business Logic]
-    Service --> Repo[DataRepository Singleton]
-    Repo --> HashMapCollections[(HashMaps: O(1) Key Lookup)]
-    Repo --> ArrayListCollections[(ArrayLists: Dynamic Lists)]
-    Service --> ExceptionLayer[Custom Exceptions: BusinessRuleException]
-    Service --> Models[Domain Models: Retailer, Product, Order, Invoice]
+    UI["Swing GUI Layer: LoginFrame & MainDashboardFrame"]
+    UI --> Service["OrderService & Business Logic"]
+    Service --> Repo["DataRepository Singleton"]
+    Repo --> HashMapCollections[("HashMaps: Fast Key Lookup")]
+    Repo --> ArrayListCollections[("ArrayLists: Dynamic Lists")]
+    Service --> ExceptionLayer["Custom Exceptions: BusinessRuleException"]
+    Service --> Models["Domain Models: Retailer, Product, Order, Invoice"]
 ```
 
 ---
