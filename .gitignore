@@ -1,0 +1,10 @@
+# Binaries and build artifacts
+bin/
+*.class
+sources.txt
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.DS_Store
